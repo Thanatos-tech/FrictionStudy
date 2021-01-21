@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Описание установки</title>
+		<link rel="stylesheet" href="css/MyStyle.css" type="text/css"/>
+		<script>
+			function toim() {document.getElementById("t1").innerHTML="<img src='images/majatnik.png' width='10%' height='10%'/> <style type='text/css'> #t1 { margin-right: 40px;} </style> "}
+			function totext() {document.getElementById("t1").innerHTML="<span>Наклонный маятник</span>"}
+
+			function toim1() {document.getElementById("t2").innerHTML="<img src='images/3.4a.png' width='10%' height='10%' />"}
+			function totext1() {document.getElementById("t2").innerHTML="<span>Если отклонить диск на некоторый угол α от положения равновесия </span>"}
+
+			function toim2() {document.getElementById("t3").innerHTML="<img src='images/3.4b.png' width='10%' height='10%' />"}
+			function totext2() {document.getElementById("t3").innerHTML="<span>Если отклонить диск на некоторый угол α от положения равновесия </span>"}
+		</script>
+		
+	</head>
+	<body>
+		<div id='content' style="margin-top: -25px;"> 
+			<nav class="sidenav">
+				<ul>
+					<li><a href="index.html"><p align="center" style="padding-top: 5px;">Главная</p></a></li>
+					<li><a href="theory.html"><p align="center" style="padding-top: 5px;">Теория</p></a></li>
+					<li><a href="description.html"><p align="center" style="padding-top: 5px;">Описание установки</p></a></li>
+					<li><a href="simulator.html"><p align="center" style="padding-top: 5px;">3D симулятор</p></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container" style="padding-top: 75px;">
+			<div class="container1" style="position:fixed;  top:0px; width: 100%; z-index:2; background-color: #ffffff">
+				
+			</div>
+			<div>
+				<div>
+					<h2>2.Описание установки</span>.</h2>
+				</div>
+				<div>
+					<p class="paragraph">
+						<span id="t1" onmousedown="toim()" onmouseout="totext()">Наклонный маятник</span> состоит из диска 1 (или шарика), который навинчивается на наконечник, подвешенный с помощью нити 2 в точке О на перекладине колонки 3. Колонка может
+						поворачиваться вокруг горизонтальной оси, отклоняясь от вертикали на угол β, который измеряется по шкале 4. Диск опирается на
+						пластину 5, которая устанавливается в пазы кронштейна колонки.
+						Диск и пластина образуют исследуемую пару трения качения и
+						могут быть сделаны из одинаковых или разных материалов. Угол
+						отклонения диска от положения равновесия определяется по шкале 6. Подсчет числа п колебаний диска осуществляет электронная
+						система, основными деталями которой являются фотоэлектрический датчик 7, который соединен с цифровым счетчиком числа
+						колебаний 8.
+					</p>
+				</div>
+				<!-- <div>
+					<img src="Risunok3.png">
+				</div> -->
+				<div>
+					<p class="paragraph">
+						<span id="t2" onmousedown="toim1()" onmouseout="totext1()"><span class="mySpan">Если отклонить диск на некоторый угол α от положения равновесия </span></span>, а затем отпустить его, он будет совершать затухающие колебания. Уменьшение амплитуды колебаний обусловлено трением качения и сопротивлением воздуха. Силу сопротивления воздуха ввиду ее малости можно не учитывать. 
+					</p>
+				</div>
+				<!-- <div>
+					<img src="Risunok4.png">
+				</div> -->
+				<div>
+					<p class="paragraph">
+						Найдем изменение механической энергии ΔE диска для двух
+						последовательных положений, соответствующих амплитудным
+						(максимальным) отклонениям αi и αi + 1 (рис. 3.4, а). 
+					</p>
+					<p class="paragraph">
+						Так как кинетическая энергия диска в этих положениях равна
+						нулю, то изменение механической энергии равно изменению потенциальной энергии ΔП и определяется работой силы реакции
+						при качении:
+					</p>
+				</div>
+				<div>
+					<img src="images/Formula12.png">
+				</div>
+				<div>
+					<p class="paragraph">
+						При отклонении от положения равновесия на угол α <span id="t3" onmousedown="toim2()" onmouseout="totext2()">диск
+						поднимется над нулевым уровнем отсчета потенциальной энергии
+						на высоту </span>  h = ΔHcosβ (рис. 3.4, б), где ΔH = l – l cosα = 2l sin2
+						(α / 2),
+						l – длина нити (рис. 3.4, а). Его потенциальная энергия в поле силы тяжести
+					</p>
+				</div>
+				<div>
+					<img src="images/Formula13.png">
+				</div>
+				<div>
+					<p class="paragraph">
+						При малых углах отклонения, sin(α / 2) ≈ α / 2, изменение потенциальной энергии ΔП диска для двух положений соответствующим углам αi и αi+1: 
+					</p>
+				</div>
+				<div>
+					<img src="images/Formula14.png">
+				</div>
+				<div>
+					<p class="paragraph">
+						Принимая во внимание формулу (3.4) для момента трения качения и учитывая, что сила реакции пластины N = mgsinβ (рис. 3.4, б)
+						и угол поворота диска связан с путем s = (αi + αi + 1)l, пройденным
+						диском, соотношением ϕ = s / r (рис. 3.4, а), из (3.10) найдем соотношение для работы силы реакции: 
+					</p>
+				</div>
+				<div>
+					<img src="images/Formula15.png">
+				</div>
+				<div>
+					<p class="paragraph">
+						Подставляя (3.14) и (3.15) в выражение (3.12), найдем, что два
+						последовательных амплитудных угла отклонения связаны соотношением
+					</p>
+				</div>
+				<div>
+					<img src="images/Formula16.png">
+				</div>
+				<div>
+					<p class="paragraph">
+						Из (3.16) следует, что после n полных колебаний угол отклонения диска αn от положения равновесия будет равен
+					</p>
+				</div>
+				<div>
+					<img src="images/Formula17.png">
+				</div>
+				<div>
+					<p class="paragraph1">
+						где α0 – начальный угол отклонения.
+					</p>
+					<p class="paragraph">
+						Отсюда следует расчетная формула для определения коэффициента трения качения: 
+					</p>
+				</div>
+				<div>
+					<img src="images/Formula18.png">
+				</div>
+				<div>
+					<p class="paragraph">
+						Ниже представлена схема установки:
+					</p>
+				</div>
+				<div>
+					<!-- <img src="black.png" width="600" height="480"> -->
+					<embed src="2D_Animation/FirstAnimation.swf" width="40%" height="400" style="margin-top: 20px; margin-bottom: 20px;"></embed>
+				</div>
+				<!-- <div>
+					<div>
+						<img src="start.png" width="65" height="65">
+						<img src="stop.png" width="100" height="65">
+					</div>
+				</div> -->
+				<div>
+					<p class="paragraph">
+						Далее в виде 2D анимации показан принцип работы установки:
+					</p>
+				</div>
+				<div>
+					<!-- <img src="black.png" width="600" height="480"> -->
+					<embed src="2D_Animation/SecondAnimation.swf" width="40%" height="400" style="margin-top: 20px; margin-bottom: 20px;"></embed>
+				</div>
+				<div>
+					<button class="myButton"><a href="simulator.html" style="color: #e0a800;">Перейти к 3D симулятору</a></button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

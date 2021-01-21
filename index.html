@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Титульный лист</title>
+	<link rel="stylesheet" href="css/MyStyle.css" type="text/css" />
+	<script language="javascript">
+		function tosmall()
+		{
+			var d=document
+			var w=d.p1.width
+			if (w>500)
+			{d.p1.width= w-10
+			d.p1.src="images/Ustanovka.png"
+			setTimeout("tosmall()",5)}
+		}
+		function tobig()
+		{	var d=document
+			var w=d.p1.width
+			if (w<800)
+			{d.p1.width= w+10
+			d.p1.src="images/Ustanovka.png"
+			setTimeout("tobig()",5)}
+		}
+	</script>
+</head>
+<body>
+	<div id='content' style="margin-top: -25px;"> 
+		<nav class="sidenav">
+			<ul>
+				<li><a href="index.html"><p align="center" style="padding-top: 5px;">Главная</p></a></li>
+				<li><a href="theory.html"><p align="center" style="padding-top: 5px;">Теория</p></a></li>
+				<li><a href="description.html"><p align="center" style="padding-top: 5px;">Описание установки</p></a></li>
+				<li><a href="simulator.html"><p align="center" style="padding-top: 5px;">3D симулятор</p></a></li>
+			</ul>
+		</nav>
+	</div>
+	<div style="padding-top: 100px; text-align: center;">
+		<div>
+			<h1>Белорусский государственный технологический университет</h1>
+		</div>
+		<div>
+			<h2>Курсовой проект по теме: "Разработка мультимедийного учебного издания "Изучение явления трения""</h2>
+		</div>
+		<div>
+			<h2>Выполнил студент 3 курса 3 группы Сирош Егор Александрович</h2>
+		</div>
+		<div>
+			<img src="images/Ustanovka.png" onmouseover="tobig()" onmouseout="tosmall()"/>
+		</div>
+		<div>
+			<button style="margin-top: 20px; width: 200px; height: 60px; font-size: 20px;"><a href="theory.html" style="color: #e0a800;">Перейти к теории</a></button>
+		</div>
+	</div>
+</body>
+</html>
